@@ -35,6 +35,8 @@ const GeolocationApi = () => {
 					Your coordinates are: Latitude:{lat}, Longitude:{long}
 				</h3>
 			)}
+			{error && <p>{error}</p>}
+
 			<button onClick={getUserLocation}>
 				Get Current Location from Geolocation API
 			</button>
